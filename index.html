@@ -35,34 +35,47 @@
         </ul>
         <ol>
             <h2>Undoing things</h2>
-            <li>undoing commit - more like ammending changes to commit <code>git commit --ammend</code></li>
-            <li>Unstaging a staged file<code>git reset HEAD <file></code></li>
-            <li>Unmodifying a modified file<code>git checkout -- <'file-name'></code></li>
+            <li>undoing commit - more like ammending changes to commit <code
+                    style="background-color: burlywood;">git commit --ammend</code></li>
+            <li>Unstaging a staged file<code style="background-color: burlywood;">git reset HEAD <file></code></li>
+            <li>Unmodifying a modified file<code
+                    style="background-color: burlywood;">git checkout -- <'file-name'></code></li>
             <li>
                 <h3>restore</h3>
                 <ol>
-                    <li>UNstaging a staged file with restore<code>git restore --staged <'file-name'></code></li>
-                    <li>Unmodifying a modified file with restore <code>git restore <'file-name'></code></li>
+                    <li>UNstaging a staged file with restore<code
+                            style="background-color: burlywood;">git restore --staged <'file-name'></code></li>
+                    <li>Unmodifying a modified file with restore <code
+                            style="background-color: burlywood;">git restore <'file-name'></code></li>
                 </ol>
             </li>
             <h3>remote</h3>
             <li>git remote -v<code></code></li>
-            <li>git default short name is <b>Origin</b><code>git remote add pj<'short-name'> <'remote url'></code>
+            <li>git default short name is <b>Origin</b><code
+                    style="background-color: burlywood;">git remote add pj<'short-name'> <'remote url'></code>
             </li>
-            <li><code>git fetch pj</code></li>
+            <li><code style="background-color: burlywood;">git fetch pj</code></li>
             <li>git push <'remote'>
                     <'branch'>
             </li>
             <h3>tag</h3>
-            <li>lists the tagged repos <code>git tag </code> & <code>git tag -l </code> </li>
+            <li>lists the tagged repos <code style="background-color: burlywood;">git tag </code> &
+                <code>git tag -l </code>
+            </li>
             <li>ADDING TAGS
                 <ul>
-                    <li>abreviated tags <code>git tag -a |tag name| -m 'message'</code></li>
-                    <li>normal tagging <code>git tag |tag name|</code></li>
+                    <li>abreviated tags <code
+                            style="background-color: burlywood;">git tag -a |tag name| -m 'message'</code></li>
+                    <li>normal tagging <code style="background-color: burlywood;">git tag |tag name|</code></li>
                 </ul>
-            <li>
-
             </li>
+            <h2>GIT Branching</h2>
+            The default branch name in GIT is 'master' . As oyu start making commits you are given a master and it
+            points to the last commit .Every time you commit, the <code
+                style="background-color: burlywood;">master</code> branch pointer moves forward automatically.
+            <li>git branch <code style="background-color: burlywood;">git branch <branch name ></code></li>
+            <li> git current branch location <code
+                    style="background-color: burlywood;">$ git log --oneline --decorate</code>
             </li>
         </ol>
 
