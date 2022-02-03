@@ -20,21 +20,52 @@
     </article>
     <article>Tracked & Untracked files </article>
     <p>Untracked - unmodified - Modified - Staged statuses</p>
-    <li>
-        <ul> more deatil view of modified files (better than <b>status</b> )Difference <ul>detail before
-                <b>Staged</b><code style="background-color: burlywood;"> git diff </code>
-            </ul>
-            <ul> detail before <b> Commit</b><code style="background-color: burlywood;"> git diff --cached</code> </ul>
+    <ul> more deatil view of modified files (better than <b>status</b> )Difference <ul>detail before
+            <b>Staged</b><code style="background-color: burlywood;"> git diff </code>
         </ul>
-        <ul>Removing files <code style="background-color: burlywood;"> git rm filename </code></ul>
-        <ul>Moving files ~ renaming files <code
-                style="background-color: burlywood;">git mv File_current_name File_New_name</code></ul>
-        <ul>Git log <ul><code> git log </code></ul>
-            <ul><code style="background-color: burlywood;">git log --stat</code></ul>
-            <ul><code style="background-color: burlywood;">git log --name-only</code>
-                <ul><code style="background-color: burlywood;"><b>git log --name-status</b></code></ul>
-            </ul>
-    </li>
+        <ul> detail before <b> Commit</b><code style="background-color: burlywood;"> git diff --cached</code> </ul>
+    </ul>
+    <ul>Removing files <code style="background-color: burlywood;"> git rm filename </code></ul>
+    <ul>Moving files ~ renaming files <code
+            style="background-color: burlywood;">git mv File_current_name File_New_name</code></ul>
+    <ul>Git log <ul><code> git log </code></ul>
+        <ul><code style="background-color: burlywood;">git log --stat</code></ul>
+        <ul><code style="background-color: burlywood;">git log --name-only</code>
+            <ul><code style="background-color: burlywood;"><b>git log --name-status</b></code></ul>
+        </ul>
+        <ol>
+            <h2>Undoing things</h2>
+            <li>undoing commit - more like ammending changes to commit <code>git commit --ammend</code></li>
+            <li>Unstaging a staged file<code>git reset HEAD <file></code></li>
+            <li>Unmodifying a modified file<code>git checkout -- <'file-name'></code></li>
+            <li>
+                <h3>restore</h3>
+                <ol>
+                    <li>UNstaging a staged file with restore<code>git restore --staged <'file-name'></code></li>
+                    <li>Unmodifying a modified file with restore <code>git restore <'file-name'></code></li>
+                </ol>
+            </li>
+            <h3>remote</h3>
+            <li>git remote -v<code></code></li>
+            <li>git default short name is <b>Origin</b><code>git remote add pj<'short-name'> <'remote url'></code>
+            </li>
+            <li><code>git fetch pj</code></li>
+            <li>git push <'remote'>
+                    <'branch'>
+            </li>
+            <h3>tag</h3>
+            <li>lists the tagged repos <code>git tag </code> & <code>git tag -l </code> </li>
+            <li>ADDING TAGS
+                <ul>
+                    <li>abreviated tags <code>git tag -a |tag name| -m 'message'</code></li>
+                    <li>normal tagging <code>git tag |tag name|</code></li>
+                </ul>
+            <li>
+
+            </li>
+            </li>
+        </ol>
+
 </body>
 
 </html>
