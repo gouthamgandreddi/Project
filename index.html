@@ -104,6 +104,22 @@
             <article>Instead of just moving the branch pointer forward, Git creates a new snapshot that results from
                 this three-way merge and automatically creates a new commit that points to it. This is referred to as a
                 merge commit, and is special in that it has more than one parent.</article>
+            <h2>Branch Management</h2>
+            <li>last commit on each bracnh <code style="background-color: burlywood;"> git branch -v</code></li>
+            <li> To see which branches are already merged into the branch you’re on,<code
+                    style="background-color: burlywood;">git branch --merged</code></li>
+            <li>To see all the branches that contain work you haven’t yet merged in,<code
+                    style="background-color: burlywood;">$ git branch --no-merge</code></li>
+            <li>delete a bracnch <code style="background-color: burlywood;">$ git branch -d</code></li>
+            <li>to rename a branch locally <code
+                    style="background-color: burlywood;"> git branch --move old-branch-name  new-branch-name</code> and
+                a good practiice is to let others know , you do this by pushing the changes to the server <code
+                    style="background-color: burlywood;"> git push --set-upstream origin corrected-branch-name
+            </code></li>
+            <li><code>git branch --all</code></li>
+            <li><code style="background-color: burlywood;"></code></li> branch
+
+
         </ol>
 
 </body>
